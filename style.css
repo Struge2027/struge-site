@@ -1,0 +1,2 @@
+
+:root{--blue:#0b579b;--orange:#E8A04B;--light:#f4f6f8;}body{font-family:Arial,sans-serif;margin:0;color:#333}header{background:var(--blue);padding:15px}nav a{color:white;margin:0 10px;text-decoration:none}footer{background:#123;color:#fff;padding:20px;text-align:center}.hero{padding:80px 20px;background:linear-gradient(135deg,var(--blue),#083b69);color:white}.container{max-width:1200px;margin:auto;padding:30px}.btn{background:var(--orange);padding:12px 20px;color:#fff;text-decoration:none}.card{border:1px solid #ddd;padding:20px;margin:10px 0;border-radius:8px}
