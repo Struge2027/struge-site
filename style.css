@@ -420,3 +420,12 @@ footer{
     }
 
 }
+header{
+    transition:all .4s ease;
+}
+
+header.scrolled{
+    padding:10px 8%;
+    background:white;
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
+}
