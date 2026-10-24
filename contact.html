@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact et demande de devis | STRUGE</title>
+    <meta name="description" content="Contactez STRUGE à Agoè, Lomé (Togo) : téléphone, WhatsApp, e-mail ou formulaire de demande de devis.">
+    <meta name="theme-color" content="#003366">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact et demande de devis | STRUGE">
+    <meta property="og:description" content="Contactez STRUGE à Agoè, Lomé (Togo) : téléphone, WhatsApp, e-mail ou formulaire de demande de devis.">
+    <meta property="og:image" content="images/hero-chantier.svg">
+
+    <link rel="icon" href="images/logo-struge.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a class="logo" href="index.html" aria-label="STRUGE – Accueil">
+                <img src="images/logo-struge.png" alt="STRUGE">
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <path d="M4 7h16M4 12h16M4 17h16" />
+                </svg>
+            </button>
+
+            <nav class="main-nav" id="menu" aria-label="Navigation principale">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">Qui sommes-nous</a>
+                <a href="services.html">Références</a>
+                <a href="contact.html" class="nav-cta" aria-current="page">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="contenu">
+
+        <section class="page-hero">
+            <div class="container">
+                <h1>Parlons de votre projet</h1>
+                <p>Décrivez-nous votre besoin : nous vous répondons en moyenne sous 24&nbsp;heures.</p>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <div class="container contact-layout">
+
+                <div class="contact-info">
+
+                    <div class="contact-item">
+                        <h3>Adresse</h3>
+                        <address>Agoè, Lomé – Togo</address>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Téléphone</h3>
+                        <a href="tel:+22893707146">+228 93 70 71 46</a>
+                        <a href="tel:+22891157770">+228 91 15 77 70</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>WhatsApp</h3>
+                        <a href="https://wa.me/22893707146" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>E-mail</h3>
+                        <a href="mailto:support@struge.tg">support@struge.tg</a>
+                    </div>
+
+                </div>
+
+                <form class="quote-form" id="devis" novalidate>
+
+                    <h2>Demander un devis</h2>
+                    <p class="form-note">Les champs marqués d'une étoile (*) sont obligatoires.</p>
+
+                    <div class="field">
+                        <label for="nom">Nom et prénom *</label>
+                        <input type="text" id="nom" name="nom" autocomplete="name" required>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="tel">Téléphone *</label>
+                            <input type="tel" id="tel" name="tel" autocomplete="tel" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" autocomplete="email">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="type">Type de projet *</label>
+                        <select id="type" name="type" required>
+                            <option value="">Choisir…</option>
+                            <option>Bâtiment (étude de structure, fondations)</option>
+                            <option>Infrastructure ou hydraulique</option>
+                            <option>Expertise ou diagnostic</option>
+                            <option>Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Votre projet *</label>
+                        <textarea id="message" name="message" required placeholder="Lieu, type d'ouvrage, état d'avancement, délais souhaités…"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Envoyer ma demande</button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <p>© 2026 STRUGE SARL – Tous droits réservés</p>
+    </footer>
+
+
+    <!-- Bouton WhatsApp flottant -->
+    <a class="whatsapp" href="https://wa.me/22893707146" target="_blank" rel="noopener" aria-label="Écrire à STRUGE sur WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29z" />
+        </svg>
+    </a>
+
+    <script>
+        // Menu mobile
+        (function () {
+            var btn = document.querySelector('.nav-toggle');
+            var menu = document.getElementById('menu');
+
+            btn.addEventListener('click', function () {
+                var open = menu.classList.toggle('is-open');
+                btn.setAttribute('aria-expanded', open);
+                btn.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+            });
+
+            menu.addEventListener('click', function (e) {
+                if (e.target.tagName === 'A') {
+                    menu.classList.remove('is-open');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        })();
+
+        // Formulaire de devis : ouvre le courrier électronique avec la demande pré-remplie
+        (function () {
+            var form = document.getElementById('devis');
+            var status = document.getElementById('form-status');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                var f = form.elements;
+                if (!f.nom.value.trim() || !f.tel.value.trim() || !f.type.value || !f.message.value.trim()) {
+                    status.textContent = 'Merci de remplir tous les champs obligatoires (*).';
+                    return;
+                }
+
+                var body =
+                    'Nom : ' + f.nom.value.trim() + '\n' +
+                    'Téléphone : ' + f.tel.value.trim() + '\n' +
+                    'E-mail : ' + (f.email.value.trim() || 'non renseigné') + '\n' +
+                    'Type de projet : ' + f.type.value + '\n\n' +
+                    f.message.value.trim();
+
+                window.location.href = 'mailto:support@struge.tg' +
+                    '?subject=' + encodeURIComponent('Demande de devis – ' + f.type.value) +
+                    '&body=' + encodeURIComponent(body);
+
+                status.textContent = 'Votre messagerie s\'ouvre avec votre demande. Il ne reste qu\'à l\'envoyer.';
+            });
+        })();
+    </script>
+
+</body>
+
+</html>
