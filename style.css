@@ -5,8 +5,8 @@
 :root {
     --navy: #003366;
     --navy-deep: #001e3c;
-    --cyan: #00aeef;
-    --cyan-dark: #0090c7;
+    --orange: #f28c1e;
+    --orange-dark: #b85c00;
     --ink: #14222e;
     --muted: #4a5b6a;
     --paper: #f3f6f9;
@@ -62,7 +62,7 @@ h3 {
 }
 
 :focus-visible {
-    outline: 3px solid var(--cyan);
+    outline: 3px solid var(--orange);
     outline-offset: 3px;
 }
 
@@ -144,11 +144,11 @@ h3 {
 
 .main-nav a:hover {
     background: var(--paper);
-    color: var(--cyan-dark);
+    color: var(--orange-dark);
 }
 
 .main-nav a[aria-current='page'] {
-    box-shadow: inset 0 -3px 0 var(--cyan);
+    box-shadow: inset 0 -3px 0 var(--orange);
     border-radius: 0;
 }
 
@@ -161,7 +161,7 @@ h3 {
 }
 
 .main-nav .nav-cta:hover {
-    background: var(--cyan-dark);
+    background: var(--orange-dark);
     color: var(--white);
 }
 
@@ -196,12 +196,12 @@ h3 {
 }
 
 .btn {
-    background: var(--cyan);
+    background: var(--orange);
     color: var(--navy-deep);
 }
 
 .btn:hover {
-    background: #4cc8f5;
+    background: #f7a54a;
     transform: translateY(-2px);
 }
 
@@ -226,8 +226,8 @@ h3 {
     padding: calc(var(--header-h) + 60px) 0 80px;
     color: var(--white);
     background:
-        linear-gradient(105deg, rgba(0, 30, 60, 0.96) 35%, rgba(0, 51, 102, 0.78)),
-        url('images/hero-bg.jpg') center / cover,
+        linear-gradient(100deg, rgba(0, 30, 60, 0.95) 30%, rgba(0, 51, 102, 0.45) 70%, rgba(0, 51, 102, 0.2)),
+        url('images/hero-chantier.svg') 72% center / cover,
         var(--navy);
     overflow: hidden;
 }
@@ -258,7 +258,7 @@ h3 {
     display: block;
     margin-bottom: 22px;
     padding-left: 16px;
-    border-left: 4px solid var(--cyan);
+    border-left: 4px solid var(--orange);
     font-size: 17px;
     color: #cfe8f7;
 }
@@ -327,7 +327,7 @@ h3 {
 }
 
 .box:hover {
-    border-top-color: var(--cyan);
+    border-top-color: var(--orange);
     box-shadow: 0 14px 34px rgba(0, 30, 60, 0.1);
 }
 
@@ -354,7 +354,7 @@ h3 {
     top: 0.5em;
     width: 7px;
     height: 12px;
-    border: solid var(--cyan);
+    border: solid var(--orange);
     border-width: 0 3px 3px 0;
     transform: rotate(45deg) translateY(-50%);
 }
@@ -375,7 +375,7 @@ h3 {
 
 .stat {
     padding-left: 20px;
-    border-left: 3px solid var(--cyan);
+    border-left: 3px solid var(--orange);
 }
 
 .stat strong {
@@ -505,7 +505,7 @@ h3 {
     position: relative;
     background:
         linear-gradient(rgba(0, 30, 60, 0.93), rgba(0, 30, 60, 0.93)),
-        url('images/hero-bg.jpg') center / cover,
+        url('images/hero-chantier.svg') 72% center / cover,
         var(--navy-deep);
     color: var(--white);
 }
@@ -539,7 +539,7 @@ h3 {
 
 .contact-item {
     padding-left: 20px;
-    border-left: 3px solid var(--cyan);
+    border-left: 3px solid var(--orange);
 }
 
 .contact-item h3 {
@@ -556,7 +556,7 @@ h3 {
 }
 
 .contact-item a:hover {
-    color: var(--cyan-dark);
+    color: var(--orange-dark);
     text-decoration: underline;
 }
 
@@ -647,7 +647,7 @@ h3 {
     }
 
     .main-nav a[aria-current='page'] {
-        box-shadow: inset 4px 0 0 var(--cyan);
+        box-shadow: inset 4px 0 0 var(--orange);
         padding-left: 16px;
     }
 
@@ -702,4 +702,5 @@ h3 {
         transition: none !important;
     }
 }
+
 
